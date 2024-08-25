@@ -1,5 +1,7 @@
-import command.Command
-import listener.Listener
+package me.meta4245.originaliumplugin
+
+import me.meta4245.originaliumplugin.command.Command
+import me.meta4245.originaliumplugin.listener.Listener
 import org.bukkit.Bukkit
 import org.bukkit.command.CommandExecutor
 import org.bukkit.plugin.java.JavaPlugin
@@ -7,9 +9,10 @@ import org.reflections.Reflections
 
 class Main : JavaPlugin() {
     override fun onEnable() {
-        val reflections = Reflections("me.meta4245.OriginaliumPlugin")
+        val commands = Reflections("me.meta4245.originaliumplugin.command")
+        val listeners = Reflections("me.meta4245.originaliumplugin.listener")
 
-        reflections.getTypesAnnotatedWith(Command::class.java)
+        commands.getTypesAnnotatedWith(Command::class.java)
             .forEach { clazz ->
                 val annotation: Command = clazz.getAnnotation(Command::class.java)
                 val instance = clazz.getDeclaredConstructor().newInstance()
@@ -18,7 +21,7 @@ class Main : JavaPlugin() {
             }
 
         val manager = Bukkit.getPluginManager()
-        reflections.getTypesAnnotatedWith(Listener::class.java)
+        listeners.getTypesAnnotatedWith(Listener::class.java)
             .forEach { clazz ->
                 manager.registerEvents(
                     clazz.getDeclaredConstructor().newInstance()

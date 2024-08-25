@@ -1,10 +1,10 @@
-package listener
+package me.meta4245.originaliumplugin.listener
 
 import org.bukkit.event.EventHandler
 import org.bukkit.event.Listener
 import org.bukkit.event.weather.LightningStrikeEvent
 
-@listener.Listener
+@me.meta4245.originaliumplugin.listener.Listener
 class LightningStrike : Listener {
     @EventHandler
     fun onLightningStrike(event: LightningStrikeEvent) {

@@ -1,0 +1,15 @@
+name: OriginaliumPlugin
+version: 1.0.0
+description: trendo
+authors: [Meta4245, trende2001]
+main: me.meta4245.originaliumplugin.Main
+commands:
+  unenchant:
+    description: "Unenchant items currently held"
+    usage: "/unenchant"
+  weather:
+    description: "Set the weather"
+    usage: "/weather <storm, thunder, clear>"
+  repair:
+    description: "Repair items currently held"
+    usage: "/repair"

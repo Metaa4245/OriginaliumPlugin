@@ -1,4 +1,4 @@
-package listener
+package me.meta4245.originaliumplugin.listener
 
 import org.bukkit.Material
 import org.bukkit.entity.ExperienceOrb
@@ -6,7 +6,7 @@ import org.bukkit.event.EventHandler
 import org.bukkit.event.Listener
 import org.bukkit.event.block.BlockBreakEvent
 
-@listener.Listener
+@me.meta4245.originaliumplugin.listener.Listener
 class BlockBreak : Listener {
     @EventHandler
     fun onBlockBreak(event: BlockBreakEvent) {

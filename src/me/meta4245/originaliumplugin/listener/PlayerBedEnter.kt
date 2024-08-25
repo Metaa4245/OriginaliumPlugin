@@ -1,4 +1,4 @@
-package listener
+package me.meta4245.originaliumplugin.listener
 
 import org.bukkit.Bukkit
 import org.bukkit.ChatColor
@@ -6,7 +6,7 @@ import org.bukkit.event.EventHandler
 import org.bukkit.event.Listener
 import org.bukkit.event.player.PlayerBedEnterEvent
 
-@listener.Listener
+@me.meta4245.originaliumplugin.listener.Listener
 class PlayerBedEnter : Listener {
     @EventHandler
     fun onPlayerBedEnter(event: PlayerBedEnterEvent) {

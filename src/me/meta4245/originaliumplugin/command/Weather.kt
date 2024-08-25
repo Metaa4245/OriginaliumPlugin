@@ -1,4 +1,4 @@
-package command
+package me.meta4245.originaliumplugin.command
 
 import org.bukkit.Bukkit
 import org.bukkit.ChatColor
@@ -8,7 +8,7 @@ import org.bukkit.command.CommandExecutor
 import org.bukkit.command.CommandSender
 import org.bukkit.entity.Player
 
-@command.Command("weather")
+@me.meta4245.originaliumplugin.command.Command("weather")
 class Weather : CommandExecutor {
     private fun storm(w: World) {
         w.setStorm(!w.hasStorm())

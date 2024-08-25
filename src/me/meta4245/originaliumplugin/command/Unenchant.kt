@@ -1,4 +1,4 @@
-package command
+package me.meta4245.originaliumplugin.command
 
 import org.bukkit.ChatColor
 import org.bukkit.command.Command
@@ -6,7 +6,7 @@ import org.bukkit.command.CommandExecutor
 import org.bukkit.command.CommandSender
 import org.bukkit.entity.Player
 
-@command.Command("unenchant")
+@me.meta4245.originaliumplugin.command.Command("unenchant")
 class Unenchant : CommandExecutor {
     override fun onCommand(
         sender: CommandSender,

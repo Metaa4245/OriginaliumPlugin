@@ -1,4 +1,4 @@
-package command
+package me.meta4245.originaliumplugin.command
 
 import org.bukkit.ChatColor
 import org.bukkit.command.Command
@@ -7,7 +7,7 @@ import org.bukkit.command.CommandSender
 import org.bukkit.entity.Player
 import kotlin.math.floor
 
-@command.Command("repair")
+@me.meta4245.originaliumplugin.command.Command("repair")
 class Repair : CommandExecutor {
     override fun onCommand(
         sender: CommandSender,
