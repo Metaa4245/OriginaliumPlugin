@@ -2,9 +2,10 @@
   <artifact type="jar" build-on-make="true" name="OriginaliumPlugin">
     <output-path>$PROJECT_DIR$/out/artifacts/OriginaliumPlugin</output-path>
     <root id="archive" name="OriginaliumPlugin.jar">
-      <element id="library" level="project" name="KotlinJavaRuntime" />
-      <element id="library" level="project" name="reflections-0.10.2" />
       <element id="module-output" name="OriginaliumPlugin" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/jetbrains/kotlin/kotlin-stdlib/2.0.0/kotlin-stdlib-2.0.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/jetbrains/annotations/13.0/annotations-13.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../reflections-0.10.2.jar" path-in-jar="/" />
     </root>
   </artifact>
 </component>
